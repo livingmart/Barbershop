@@ -91,16 +91,41 @@ body {
 	margin: 0;
 }
 
+/* .hero-section{
+border: 1px solid red;
+} */
+
 .hero{
+	/* height: 500vh; */
 	font-weight: 900;
   /* background: #43157b; */
-  background: #212121;
+  /* background: #212121; */
   /* padding: 0 33px; */
   /* padding-bottom: 50px; */
   /* border-bottom: 1px solid #fff; */
-  opacity: 0.85; /* added */
-  position: relative;
+  /* opacity: 0.9; */
+  /* position: relative; */
   /* z-index: 1; */
+}
+.back-video{
+position:absolute;
+right: 0;	
+bottom: 0;
+z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+	.back-video{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 1){
+	.back-video{
+		width: auto;
+		height: 100%;
+	} 
 }
 
 article,
@@ -39883,5 +39908,22 @@ margin-top: -35px;
 	text-align: center;
 	align-items: center;
 	justify-items: center;
+}
+}
+
+#jumbotron-custom{
+margin-top: 150px;
+/* margin-bottom: 50px; */
+}
+
+@media only screen and (max-width: 426px){
+	#jumbotron-custom{
+margin-top: 1px;
+}
+.whoweare{
+	margin-top: 50px;
+}
+.book-appointment{
+	margin-bottom: 50px;
 }
 }

@@ -103,12 +103,12 @@ border: 1px solid red;
   /* padding: 0 33px; */
   /* padding-bottom: 50px; */
   /* border-bottom: 1px solid #fff; */
-  /* opacity: 0.9; */
+  opacity: 0.9;
   /* position: relative; */
   /* z-index: 1; */
 }
 .back-video{
-position:absolute;
+/* position:absolute; */
 right: 0;	
 bottom: 0;
 z-index: -1;
@@ -121,7 +121,7 @@ z-index: -1;
 	}
 }
 
-@media (max-aspect-ratio: 1){
+@media (max-aspect-ratio: 16/9){
 	.back-video{
 		width: auto;
 		height: 100%;
@@ -39911,19 +39911,29 @@ margin-top: -35px;
 }
 }
 
-#jumbotron-custom{
-margin-top: 150px;
-/* margin-bottom: 50px; */
-}
 
 @media only screen and (max-width: 426px){
-	#jumbotron-custom{
-margin-top: 1px;
-}
 .whoweare{
 	margin-top: 50px;
 }
-.book-appointment{
-	margin-bottom: 50px;
 }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #4aa7b2; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 8px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
